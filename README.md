@@ -11,29 +11,54 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+
+# Smooth Widgets
+
+Smooth Widgets is a collection of custom widgets for Flutter, designed to help you build beautiful and responsive user interfaces quickly and easily.
+
+
+
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+This package currently includes the following widgets:
 
-## Getting started
+- `SmoothTextButton:` A customizable button widget with smooth animations and multiple styles.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use Smooth Widgets in your Flutter project, simply add the following dependency to your pubspec.yaml file:
 
 ```dart
-const like = 'sample';
+  dependencies:
+    smooth_widgets: ^0.0.1
 ```
 
-## Additional information
+Then, import the package and use any of the included widgets in your Flutter code:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+import 'package:smooth_widgets/smooth_widgets.dart';
+
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SmoothButton(
+      text: 'Click me!',
+      onPressed: () => print('Button pressed!'),
+    );
+  }
+}
+```
+
+    
+## Contributing
+
+This package is open-source and contributions are always welcome! If you find a bug or have a feature request, please file an issue on GitHub.
+
+If you would like to contribute code to this project, please fork the repository and submit a pull request.
+
+## License
+
+This package is released under the MIT License. See LICENSE file for details.
+
