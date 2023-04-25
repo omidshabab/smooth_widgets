@@ -43,9 +43,10 @@ import 'package:smooth_widgets/smooth_widgets.dart';
 class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SmoothButton(
-      text: 'Click me!',
-      onPressed: () => print('Button pressed!'),
+    return SmoothTextButton(
+      title: 'Click me!',
+      isActive: true,
+      onPressed: () {},
     );
   }
 }
