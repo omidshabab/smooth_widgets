@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SmoothTextField extends StatelessWidget {
-  const SmoothTextField({super.key});
+class SmoothChatTextField extends StatelessWidget {
+  const SmoothChatTextField({super.key});
 
   @override
   Widget build(BuildContext context) {
