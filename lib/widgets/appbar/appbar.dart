@@ -6,8 +6,8 @@ import 'dart:ui';
 
 // Importing necessary  from the material package and a custom widget
 import 'package:flutter/material.dart';
-import 'package:smooth_widgets/extensions/darkmode.extension.dart';
-import 'package:smooth_widgets/widgets/buttons/icon.button.dart';
+import 'package:smooth_widgets/extensions/darkmode_extension.dart';
+import 'package:smooth_widgets/widgets/buttons/icon_button.dart';
 
 // A stateless representing a custom app bar with smooth buttons
 class SmoothAppbar extends StatelessWidget {

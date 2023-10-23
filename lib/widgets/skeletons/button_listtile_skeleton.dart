@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:smooth_widgets/extensions/darkmode.extension.dart';
+import 'package:smooth_widgets/extensions/darkmode_extension.dart';
 
 class SmoothButtonListTileSkeleton extends StatelessWidget {
   const SmoothButtonListTileSkeleton({super.key});

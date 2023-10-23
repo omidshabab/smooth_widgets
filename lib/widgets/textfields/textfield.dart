@@ -75,27 +75,31 @@ class SmoothTextField extends StatelessWidget {
                 ),
               )
             : null,
-        suffixIcon: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
-          child: Container(
-            constraints: BoxConstraints(maxWidth: 50),
-            width: 45,
-            decoration: BoxDecoration(
-                border: Border(
-              left: BorderSide(
-                  width: 1, color: const Color(0xffF1F1F1).withOpacity(0.5)),
-            )),
-            child: InkWell(
-              hoverColor: Colors.transparent,
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: suffixIconOnPressed,
-              child: Icon(suffixIcon,
-                  weight: 23, color: Colors.black.withOpacity(0.5)),
-            ),
-          ),
-        ),
+        suffixIcon: suffixIcon != null
+            ? Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
+                child: Container(
+                  constraints: BoxConstraints(maxWidth: 50),
+                  width: 45,
+                  decoration: BoxDecoration(
+                      border: Border(
+                    left: BorderSide(
+                        width: 1,
+                        color: const Color(0xffF1F1F1).withOpacity(0.5)),
+                  )),
+                  child: InkWell(
+                    hoverColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: suffixIconOnPressed,
+                    child: Icon(suffixIcon,
+                        weight: 23, color: Colors.black.withOpacity(0.5)),
+                  ),
+                ),
+              )
+            : null,
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
               width: 1, color: const Color(0xffF1F1F1).withOpacity(0.5)),
