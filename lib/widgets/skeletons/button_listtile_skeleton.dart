@@ -24,10 +24,8 @@ class SmoothButtonListTileSkeleton extends StatelessWidget {
         leading: AspectRatio(
           aspectRatio: 1 / 1,
           child: Shimmer(
-            period: Duration(seconds: 2), // Duration of the animation
-            // color: Colors.white, // Color of the shimmer effect
+            period: Duration(seconds: 2),
             gradient: LinearGradient(
-              // Gradient color of the shimmer effect
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
@@ -48,10 +46,8 @@ class SmoothButtonListTileSkeleton extends StatelessWidget {
             ? Colors.black.withOpacity(0.1)
             : Colors.white.withOpacity(0.5),
         title: Shimmer(
-          period: Duration(seconds: 2), // Duration of the animation
-          // color: Colors.white, // Color of the shimmer effect
+          period: Duration(seconds: 2),
           gradient: LinearGradient(
-            // Gradient color of the shimmer effect
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
@@ -72,10 +68,8 @@ class SmoothButtonListTileSkeleton extends StatelessWidget {
           ),
         ),
         subtitle: Shimmer(
-          period: Duration(seconds: 2), // Duration of the animation
-          // color: Colors.white, // Color of the shimmer effect
+          period: Duration(seconds: 2),
           gradient: LinearGradient(
-            // Gradient color of the shimmer effect
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [
@@ -96,10 +90,8 @@ class SmoothButtonListTileSkeleton extends StatelessWidget {
           ),
         ),
         trailing: Shimmer(
-          period: Duration(seconds: 2), // Duration of the animation
-          // color: Colors.white, // Color of the shimmer effect
+          period: Duration(seconds: 2),
           gradient: LinearGradient(
-            // Gradient color of the shimmer effect
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [

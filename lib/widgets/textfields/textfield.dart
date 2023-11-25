@@ -1,37 +1,35 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class SmoothTextField extends StatelessWidget {
-  String? hintText;
-  IconData? suffixIcon;
-  VoidCallback? suffixIconOnPressed;
-  IconData? prefixIcon;
-  VoidCallback? prefixIconOnPressed;
-  bool? obscureText;
-  TextEditingController? textfieldController;
-  int? minLines = 1;
-  int? maxLines = 1;
-  bool? enabled;
-  Function(String)? onChanged;
-  String? Function(String?)? validator;
+  final String? hintText;
+  final IconData? suffixIcon;
+  final VoidCallback? suffixIconOnPressed;
+  final IconData? prefixIcon;
+  final VoidCallback? prefixIconOnPressed;
+  final bool? obscureText;
+  final TextEditingController? textfieldController;
+  final int? minLines;
+  final int? maxLines;
+  final bool? enabled;
+  final Function(String)? onChanged;
+  final String? Function(String?)? validator;
 
-  SmoothTextField({
+  const SmoothTextField({
     Key? key,
-    this.hintText,
-    this.suffixIcon,
-    this.suffixIconOnPressed,
-    this.prefixIcon,
-    this.prefixIconOnPressed,
-    this.obscureText,
-    this.textfieldController,
-    this.minLines,
-    this.maxLines,
-    this.enabled,
-    this.onChanged,
-    this.validator,
+    required this.hintText,
+    required this.suffixIcon,
+    required this.suffixIconOnPressed,
+    required this.prefixIcon,
+    required this.prefixIconOnPressed,
+    required this.obscureText,
+    required this.textfieldController,
+    required this.minLines,
+    required this.maxLines,
+    required this.enabled,
+    required this.onChanged,
+    required this.validator,
   }) : super(key: key);
 
   @override

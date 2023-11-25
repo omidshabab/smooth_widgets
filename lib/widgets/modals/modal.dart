@@ -4,19 +4,17 @@ import 'dart:ui';
 import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/material.dart';
 
-// Define a function named "smoothModal" which accepts three parameters
-// "child", "context" and "willPopScope" with a default value of "true"
 smoothModal(Widget child, BuildContext context,
     {bool willPopScope = true}) async {
   return showModalBottomSheet(
-    elevation: 0, // Set the elevation of the bottom sheet to 0
+    elevation: 0,
     backgroundColor: Colors
-        .transparent, // Set the background color of the bottom sheet to transparent
+        .transparent,
     isScrollControlled: true,
     context: context,
     builder: (context) {
-      return WillPopScope(
-        onWillPop: () async => willPopScope,
+      return PopScope(
+        canPop: willPopScope,
         child: StatefulBuilder(
           builder: (BuildContext context, setState) {
             return Padding(
