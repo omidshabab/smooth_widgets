@@ -18,18 +18,18 @@ class SmoothTextField extends StatelessWidget {
 
   const SmoothTextField({
     Key? key,
-    required this.hintText,
-    required this.suffixIcon,
-    required this.suffixIconOnPressed,
-    required this.prefixIcon,
-    required this.prefixIconOnPressed,
-    required this.obscureText,
-    required this.textfieldController,
-    required this.minLines,
-    required this.maxLines,
-    required this.enabled,
-    required this.onChanged,
-    required this.validator,
+    this.hintText,
+    this.suffixIcon,
+    this.suffixIconOnPressed,
+    this.prefixIcon,
+    this.prefixIconOnPressed,
+    this.obscureText,
+    this.textfieldController,
+    this.minLines,
+    this.maxLines,
+    this.enabled,
+    this.onChanged,
+    this.validator,
   }) : super(key: key);
 
   @override

@@ -1,27 +1,19 @@
-// ignore_for_file: must_be_immutable
-
-// Importing the ui library from dart, which provides low-level access to graphics and input
-
 import 'dart:ui';
 
-// Importing necessary  from the material package and a custom widget
 import 'package:flutter/material.dart';
 import 'package:smooth_widgets/extensions/darkmode_extension.dart';
 import 'package:smooth_widgets/widgets/buttons/icon_button.dart';
 
-// A stateless representing a custom app bar with smooth buttons
 class SmoothAppbar extends StatelessWidget {
-  // Class properties, including the title and icons with their associated callbacks
-  String? title;
-  VoidCallback? titleOnTap;
-  IconData? leftIcon;
-  VoidCallback? leftIconOnPressed;
-  IconData? rightIcon;
-  VoidCallback? rightIconOnPressed;
-  PreferredSizeWidget? bottom;
+  final String? title;
+  final VoidCallback? titleOnTap;
+  final IconData? leftIcon;
+  final VoidCallback? leftIconOnPressed;
+  final IconData? rightIcon;
+  final VoidCallback? rightIconOnPressed;
+  final PreferredSizeWidget? bottom;
 
-  // Constructor for the class, using named parameters
-  SmoothAppbar({
+  const SmoothAppbar({
     super.key,
     this.title,
     this.titleOnTap,
@@ -32,10 +24,8 @@ class SmoothAppbar extends StatelessWidget {
     this.bottom,
   });
 
-  // Build method to create the app bar widget
   @override
   build(BuildContext context) {
-    // Adding a directionality to ensure correct layout based on text direction
     return Directionality(
       textDirection: TextDirection.rtl,
       child: ClipRect(

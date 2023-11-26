@@ -8,7 +8,7 @@ class SmoothIconButton extends StatelessWidget {
   const SmoothIconButton({
     super.key,
     required this.icon,
-    required this.onPressed,
+    this.onPressed,
   });
 
   @override

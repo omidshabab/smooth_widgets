@@ -11,10 +11,10 @@ class SmoothTextButton extends StatelessWidget {
   const SmoothTextButton({
     Key? key,
     required this.title,
-    required this.isLoading,
-    required this.backgroundColor,
-    required this.isActive,
-    required this.onPressed,
+    this.isLoading,
+    this.backgroundColor,
+    this.isActive,
+    this.onPressed,
   }) : super(key: key);
 
   @override
